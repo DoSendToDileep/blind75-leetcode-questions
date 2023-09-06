@@ -101,6 +101,5 @@ Heap
  ________________________________________
 Important Link:
 14 Patterns to Ace Any Coding Interview Question
-https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions#:~:text=14%20Patterns%20to%20Ace%20Any%20Coding%20Interview%20Question
 
 
