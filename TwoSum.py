@@ -37,3 +37,27 @@ Constraints:
 -109 <= target <= 109
 Only one valid answer exists.
 """
+
+"""
+Different approaches:
+1. Brute force method iterating over arrays with two variables.
+2. Sorting and two-pointers technique
+    Let an array be {1, 4, 45, 6, 10, -8} and sum to find be 16
+    After sorting the array 
+    A = {-8, 1, 4, 6, 10, 45}
+    Now, increment ‘l’ when the sum of the pair is less than the required sum and decrement ‘r’ when the sum of the pair is more than the required sum. 
+    This is because when the sum is less than the required sum then to get the number which could increase the sum of pair, start moving from left to right(also sort the array) thus “l++” and vice versa.
+    Initialize l = 0, r = 5 
+    A[l] + A[r] ( -8 + 45) > 16 => decrement r. Now r = 4 
+    A[l] + A[r] ( -8 + 10) increment l. Now l = 1 
+    A[l] + A[r] ( 1 + 10) increment l. Now l = 2 
+    A[l] + A[r] ( 4 + 10) increment l. Now l = 3 
+    A[l] + A[r] ( 6 + 10) == 16 => Found candidates (return 1)
+3. Hashing
+    Follow the steps below to solve the problem:
+
+    Initialize an empty hash table s.
+    Do the following for each element A[i] in A[] 
+    If s[x – A[i]] is set then print the pair (A[i], x – A[i])
+    Insert A[i] into s.
+"""
