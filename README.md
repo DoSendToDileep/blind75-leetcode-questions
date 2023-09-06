@@ -77,7 +77,7 @@ String
 •	Longest Palindromic Substring
 •	Palindromic Substrings
 •	Encode and Decode Strings (Leetcode Premium)
- 
+ ________________________________________
 Tree
 •	Maximum Depth of Binary Tree
 •	Same Tree
@@ -93,14 +93,14 @@ Tree
 •	Implement Trie (Prefix Tree)
 •	Add and Search Word
 •	Word Search II
- 
+ ________________________________________
 Heap
 •	Merge K Sorted Lists
 •	Top K Frequent Elements
 •	Find Median from Data Stream
- 
+ ________________________________________
 Important Link:
 14 Patterns to Ace Any Coding Interview Question
+https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions#:~:text=14%20Patterns%20to%20Ace%20Any%20Coding%20Interview%20Question
 
-![image](https://github.com/DoSendToDileep/blind75-leetcode-questions/assets/63954333/5ad2e863-554e-456e-8b76-2509fcc3dc9d)
 
