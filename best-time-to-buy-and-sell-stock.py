@@ -9,6 +9,20 @@ class Solution:
                 maxProfit = max(maxProfit, currentProfit)
         return maxProfit if maxProfit != float('-inf') else 0
 
+# O(n) Solution
+class Solution:
+    def maxProfit(self, prices: List[int]) -> int:
+        left , right = 0,1
+        maxProfit = 0
+        while right < len(prices):
+            if prices[right]>prices[left]:
+                profit = prices[right]-prices[left]
+                maxProfit = max(profit,maxProfit)
+            else:
+                left = right
+            right += 1
+        return maxProfit
+
 #Question
 """
 You are given an array prices where prices[i] is the price of a given stock on the ith day.
