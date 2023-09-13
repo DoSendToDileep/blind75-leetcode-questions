@@ -24,6 +24,23 @@ class Solution:
                 nums1.append(int(totalVal/i))
         return nums1
 
+# Time limit exceeded using numpy
+import numpy as np
+class Solution:
+    def productExceptSelf(self, nums: List[int]) -> List[int]:
+        output = []
+        for i in range(len(nums)):
+            if i == 0:
+                output.append(int(np.prod(nums[i+1::])))
+                #print(nums[i+1::])
+            elif i == len(nums)-1:
+                output.append(int(np.prod(nums[0:i])))
+                #print(nums[0:i])
+            else:
+                output.append(int(np.prod(nums[0:i]) * np.prod(nums[i+1::])))
+                #print(nums[0:i], nums[i+1::])
+        return output
+
 # Question
 """
 Given an integer array nums, return an array answer such that answer[i] is equal to the product of all the elements of nums except nums[i].
